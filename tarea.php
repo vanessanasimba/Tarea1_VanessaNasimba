@@ -6,7 +6,7 @@ $numero1 = 4;
 $numero2 = 5;
 $numero3 = 2.3;
 $validar = true;
-$array = array("hola", "como", "estas", "tu");
+$paises = array("Ecuador", "Brasil", "Argentina", "Colombia","Peru");
 
 
 echo $nombre . "<br>";
@@ -43,4 +43,14 @@ if ( $numero2 > $numero1){
 } else {
     echo $numero2 . " es menor a ". $numero1 . "<br>";
 } 
+
+echo "<br>";
+echo "CADENA: ". "<br>";
+// impimir el arreglo 
+foreach ($paises as &$valor) {
+   echo $valor . "<br>";
+}
+
+echo $paises[3] . "<br>";
+echo "TAMAÑO LISTA: ". sizeof($paises) . "<br>";
 ?>
